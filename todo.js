@@ -135,7 +135,11 @@ inputGroup.addEventListener("click", function(e) {
 
         let inputAdd = input.value;
         let inputId = input.getAttribute("data-id")
-        alert(inputId);
+        let localArr = JSON.parse(localStorage.getItem("itemArr2"));
+        localArr.splice(inputId, 1, inputAdd);
+        localStorage.setItem("itemArr2", JSON.stringify(localArr));
+        window.location.reload();
+
     };
 });
 
