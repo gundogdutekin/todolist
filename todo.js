@@ -13,7 +13,6 @@ if (firstItemList !== null) {
     for (const key in firstItemList) {
         let task = document.querySelector(".list-group");
         let li = document.createElement("li");
-
         task.append(li);
         li.className = "list-group-item";
         let drop = `<div class="form-check float-start">
