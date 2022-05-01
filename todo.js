@@ -2,9 +2,7 @@
 const btnAdd = document.querySelector("#btnAdd");
 const alertBar = document.querySelector(".alert");
 const btnDeleteAll = document.querySelector("#btnDeleteAll");
-
 btnAdd.addEventListener("click", itemAdd);
-
 btnDeleteAll.addEventListener("click", itemDeleteAll);
 
 let firstItemList = JSON.parse(localStorage.getItem("itemArr2"));
