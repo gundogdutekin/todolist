@@ -131,14 +131,10 @@ inputGroup.addEventListener("click", function(e) {
         let input = document.querySelector("#inputAdd");
 
         let inputAdd = input.value;
-        let inputId = input.getAttribute("data-id")
+        let inputId = input.getAttribute("data-id");
         let localArr = JSON.parse(localStorage.getItem("itemArr2"));
         localArr.splice(inputId, 1, inputAdd);
         localStorage.setItem("itemArr2", JSON.stringify(localArr));
         window.location.reload();
-
-    };
+    }
 });
-
-
-function itemDelete() {}
